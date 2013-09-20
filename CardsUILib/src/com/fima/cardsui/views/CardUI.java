@@ -223,6 +223,14 @@ public class CardUI extends FrameLayout {
 
 	}
 
+	public void setSelection(int pos) {
+		try {
+			mListView.setSelection(pos);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 	public void scrollToCard(int pos) {
 		// int y = 0;
 		try {
